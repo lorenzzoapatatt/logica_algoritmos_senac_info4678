@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio5</title>
+</head>
+<body>
+    <input type="number" id="nota1">
+    <input type="number" id="nota2">
+
+    <button onclick="media()">Clica aqui uriel da silva</button>
+
+    <script>
+        function media() {
+            var notaFinal1 = document.getElementById("nota1").value;
+            var notaFinal2 = document.getElementById("nota2").value;
+            notaFinal1 = Number(notaFinal1);
+            notaFinal2 = Number(notaFinal2);
+            notaSomada = (notaFinal1 + notaFinal2);
+
+            alert(notaSomada / 2);
+        }
+    </script>
+</body>
+</html>

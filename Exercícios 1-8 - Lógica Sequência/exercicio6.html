@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio6</title>
+</head>
+<body>
+    <input type="number" id="atras">
+    <input type="number" id="frente">
+
+    <button onclick="atrasFrente()">Clica AGORA</button>
+
+    <script>
+        function atrasFrente() {
+            var atrasFinal = document.getElementById("atras").value;
+            var frenteFinal = document.getElementById("frente").value;
+            frenteFinal = Number(frenteFinal)
+
+            alert(atrasFinal- 1);
+            alert(frenteFinal+ 1);
+        }
+    </script>
+</body>
+</html>

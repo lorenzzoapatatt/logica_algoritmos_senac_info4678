@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio8</title>
+</head>
+<body>
+    <input type="text" id="metros">
+
+    <button onclick="outrasMedidas()">Clica aqui</button>
+
+    <script>
+        function outrasMedidas() {
+            var medidaKM = parseFloat(document.getElementById("metros").value *1000);
+            var medidaHM = parseFloat(document.getElementById("metros").value *100);
+            var medidaDam = parseFloat(document.getElementById("metros").value *10);
+            var medidaDm = parseFloat(document.getElementById("metros").value / 10);
+            var medidaCm = parseFloat(document.getElementById("metros").value / 100);
+            var medidaMm = parseFloat(document.getElementById("metros").value / 1000);
+
+            alert (`aqui ${medidaKM} ${medidaHM} ${medidaDam} ${medidaDm} ${medidaCm} ${medidaMm}`);
+
+
+        }
+    </script>
+</body>
+</html>

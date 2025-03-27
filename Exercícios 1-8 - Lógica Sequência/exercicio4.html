@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio5</title>
+</head>
+<body>
+    <input type="text" id="valor1" placeholder="digite o valor">
+    <input type="text" id="valor2" placeholder="digite o outro valor">
+
+    <button onclick="somatorio()">clica aqui profexo</button>
+
+    <script>
+        function somatorio() {
+            var valorFinal1 = document.getElementById("valor1").value
+            var valorFinal2 = document.getElementById("valor2").value
+            valorFinal1 = Number(valorFinal1);
+            valorFinal2 = Number(valorFinal2);
+
+            alert(valorFinal1 + valorFinal2);
+        }
+    </script>
+</body>
+</html>
