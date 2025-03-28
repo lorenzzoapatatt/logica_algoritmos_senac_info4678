@@ -6,7 +6,7 @@
     <title>exercicio8</title>
 </head>
 <body>
-    <input type="text" id="metros">
+    <input type="text" id="metros" placeholder="bote o valor em metros">
 
     <button onclick="outrasMedidas()">Clica aqui</button>
 
@@ -19,7 +19,7 @@
             var medidaCm = parseFloat(document.getElementById("metros").value / 100);
             var medidaMm = parseFloat(document.getElementById("metros").value / 1000);
 
-            alert (`aqui ${medidaKM} ${medidaHM} ${medidaDam} ${medidaDm} ${medidaCm} ${medidaMm}`);
+            alert (`aqui ${medidaKM}Km ${medidaHM}Hm ${medidaDam}Dam ${medidaDm}Dm ${medidaCm}Cm ${medidaMm}Mm`);
 
 
         }
