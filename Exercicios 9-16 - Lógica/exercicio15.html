@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio15</title>
+</head>
+<body>
+    <input type="text" id="diasTrabalhados" placeholder="dias trabalhados">
+    <button onclick="conversor()">Clica aqui</button>
+
+    <script>
+        function conversor() {
+            var salarioFuncionario = parseFloat(document.getElementById("diasTrabalhados").value*8);
+            converterDinheiro = salarioFuncionario*25;
+
+            alert(converterDinheiro);
+        }
+    </script>
+</body>
+</html>

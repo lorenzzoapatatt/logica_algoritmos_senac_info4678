@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio10</title>
+</head>
+<body>
+    <input type="text" id="largura" placeholder="largura">
+    <input type="text" id="altura" placeholder="altura">
+    <button onclick="areaPintada()">Clique aqui</button>
+
+    <script>
+        function areaPintada() {
+            var areaLargura = parseInt(document.getElementById("largura").value);
+            var areaAltura = parseInt(document.getElementById("altura").value);
+            calcularArea = (areaAltura + areaLargura);
+
+            alert(`área a ser pintada ${calcularArea*2} 
+            e e a quantidade de tinta necessária para o serviço ${calcularArea}`);
+        }
+    </script>
+</body>
+</html>

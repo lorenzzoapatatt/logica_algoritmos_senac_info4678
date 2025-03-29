@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio13</title>
+</head>
+<body>
+    <input type="text" id="valor" placeholder="bote seu valor">
+    <button onclick="valorDesconto()">Clica aqui</button>
+
+    <script>
+        function valorDesconto() {
+            var valorNormal = document.getElementById("valor").value;
+            valorRegra3 = (valorNormal*1.15)/100
+
+            alert(valorRegra3);
+        }
+    </script>
+</body>
+</html>

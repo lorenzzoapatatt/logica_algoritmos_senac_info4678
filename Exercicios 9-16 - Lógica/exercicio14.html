@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio14</title>
+</head>
+<body>
+    <input type="text" id="quantidadeKm" placeholder="bote a quantidade em Km">
+    <input type="text" id="dias" placeholder="quantos dias o carro foi alugado">
+    <button onclick="alugada()">Clica aqui</button>
+
+    <script>
+        function alugada() {
+            var kmRodado = parseFloat(document.getElementById("quantidadeKm").value);
+            var diasPagar = parseFloat(document.getElementById("dias").value);
+
+            alert(`voce ${diasPagar*90} e ${kmRodado*1.20}`)
+        }
+    </script>
+</body>
+</html>

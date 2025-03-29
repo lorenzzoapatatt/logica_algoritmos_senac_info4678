@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio11</title>
+</head>
+<body>
+    <input type="text" id="valorA" placeholder="valorA">
+    <input type="text" id="valorB" placeholder="valorB">
+    <input type="text" id="valorC" placeholder="valorC">
+    <button onclick="delta()">Clique aqui</button>
+
+    <script>
+        function delta() {
+            var deltaA = parseFloat(document.getElementById("valorA").value);
+            var deltaB = parseFloat(document.getElementById("valorB").value);
+            var deltaC = parseFloat(document.getElementById("valorC").value);
+            var deltaCalculo = (4*deltaA*deltaC) - (deltaB*2);
+
+            alert(deltaCalculo)
+        }
+    </script>
+</body>
+</html>

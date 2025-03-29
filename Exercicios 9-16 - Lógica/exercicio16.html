@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio16</title>
+</head>
+<body>
+    <input type="text" id="diasFumados" placeholder="quantidade de cigarros fumados">
+    <input type="text" id="anosFumados" placeholder="anos fumando cigarros">
+    <button onclick="cigarroFinal()">Clica aqui</button>
+
+    <script>
+        function cigarroFinal() {
+            var cigarrosFumados = parseFloat(document.getElementById("diasFumados").value*0.00694444);
+            var cigarrosFumadosAnos = parseFloat(document.getElementById("anosFumados").value);
+
+            alert(cigarrosFumados + cigarrosFumadosAnos);
+
+            //ta tudo errado e eu odeio a minha vida: Escreva um programa para 
+            // calcular a redução do tempo de vida de um fumante. O usuário irá
+            //  digitar a quantidade de cigarros fumados por dias e quantos anos
+            //  ele já fumou. Considere que um fumante perde 10 min de vida a
+            //  cada cigarro. Calcule quantos dias de vida um fumante perderá e
+            //  exiba o total em dias.
+        }
+    </script>
+</body>
+</html>
