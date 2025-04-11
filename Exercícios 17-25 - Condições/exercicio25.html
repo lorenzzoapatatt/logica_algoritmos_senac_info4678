@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 25</title>
+</head>
+<body>
+    <input type="text" id="segmento1">
+    <input type="text" id="segmento2">
+    <input type="text" id="segmento3">
+    <button onclick="triangulo()">Clica aqui</button>
+
+    <script>
+        function triangulo() {
+            var segmento1 = parseFloat(document.getElementById("segmento1").value);
+            var segmento2 = parseFloat(document.getElementById("segmento2").value);
+            var segmento3 = parseFloat(document.getElementById("segmento3").value);
+
+            // if (segmento1 + segmento2 > segmento3 && segmento1 + segmento3 > segmento2 && segmento2 + segmento3 > segmento1) {
+            //     alert("é um triangulo")
+            // } else {
+            //     alert("NAO É UM TRIANGULO")
+            // }
+
+            if (segmento1 + segmento2 > segmento3) {
+                if (segmento1 + segmento3 > segmento2) {
+                    if (segmento2 + segmento3 > segmento1) {
+                        alert("é um triangulo")
+                    } else {
+                        alert("NAO É UM TRIANGULO")
+                    }
+                } else {
+                    alert("NAO É UM TRIANGULO")
+                }
+            } else {
+                alert("NAO É UM TRIANGULO")
+            }
+
+
+            // if (segmento1 + segmento2 > segmento3) {
+
+            // } else if (segmento1 + segmento3 > segmento2) {
+
+            // } else if (segmento2 + segmento3 > segmento1) {
+            //     alert("é um triangulo")
+            // } else {
+            //     alert("NAO É UM TRIANGULO")
+            // }
+
+        }
+    </script>
+</body>
+</html>
+
+    /
+    //
+    ///
+A   ///   B
+    ////
+    /////
+      C
+A + B > C
+A + C > B
+B + C > A

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 18</title>
+</head>
+<body>
+    <input type="text" id="anoDeNascimento">
+    <button onclick="calculo()">Clica aqui</button>
+
+    <script>
+        function calculo() {
+            var anoDeNascimento = document.getElementById("anoDeNascimento").value;
+            var calculoIdade = 2025 - anoDeNascimento;
+
+            if (anoDeNascimento < 18) {
+                alert("voce nao vota ainda");
+            } else {
+                alert("voce tem idade para votar");
+            }
+        }
+    </script>
+</body>
+</html>

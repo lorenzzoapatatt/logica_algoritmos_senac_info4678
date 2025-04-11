@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 19</title>
+</head>
+<body>
+    <input type="text" id="nota1">
+    <input type="text" id="nota2">
+    <button onclick="calculoMedia()">Clica aqui</button>
+
+    <script>
+        function calculoMedia() {
+            var nota1 = parseInt(document.getElementById("nota1").value);
+            var nota2 = parseInt(document.getElementById("nota2").value);
+
+            var calculoSoma = (nota1 + nota2);
+            var calculoDivisao = calculoSoma / 2;
+
+            if (calculoDivisao < 7) {
+                alert("parabens voce nao passou !!!");
+            } else {
+                alert("voce passou :(");
+            }
+        }
+    </script>
+</body>
+</html>

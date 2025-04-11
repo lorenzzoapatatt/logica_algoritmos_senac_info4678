@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 21</title>
+</head>
+<body>
+    <input type="text" id="ano">
+    <button onclick="calculoBissexto()">Clica</button>
+
+    <script>
+        function calculoBissexto() {
+            var ano = parseInt(document.getElementById("ano").value);
+
+            if (ano % 4 == 0 && ano % 400 == 0 && ano % 100 == 0) {
+                alert("é bissexto")
+            } else {
+                alert("não é bissexto")
+            }
+        }
+    </script>
+</body>
+</html>
+
+if (nao é divisel por 100)

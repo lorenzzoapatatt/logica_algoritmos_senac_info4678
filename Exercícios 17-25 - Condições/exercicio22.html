@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 22</title>
+</head>
+<body>
+    <input type="text" id="anoDeNascimento">
+    <button onclick="alistamento()">Clica</button>
+
+    <script>
+        function alistamento() {
+            var anoDeNascimento = parseInt(document.getElementById("anoDeNascimento").value);
+            var anosQueFaltam = 2025 - anoDeNascimento;
+            var alistamentoAnos = anosQueFaltam - 18;
+
+            if(anosQueFaltam < 18) {
+                alert(`tem ${alistamentoAnos} antes que se aliste`)
+            } else {
+                alert(`se aliste porque se passaram ${alistamentoAnos} anos`)
+            }
+        }
+    </script>
+</body>
+</html>

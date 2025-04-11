@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 24</title>
+</head>
+<body>
+    <input type="text" id="distanciaPassageiro">
+    <button onclick="calculo()">Clica aqui pofexo</button>
+
+    <script>
+        function calculo() {
+            var distanciaPassageiro = parseInt(document.getElementById("distanciaPassageiro").value);
+            var distanciaKm = distanciaPassageiro;
+            var valor = distanciaKm * 1.50
+            var valorDistanciaMaior = distanciaKm * 1.45
+            if (distanciaPassageiro < 200) {
+                alert(`voce vai pagar ${valor.toFixed(2)}`)
+            } else {
+                alert(`voce vai pagar com desconto ${valorDistanciaMaior.toFixed(2)}`)
+            }
+
+        }
+    </script>
+</body>
+</html>

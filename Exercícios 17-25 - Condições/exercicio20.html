@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 20</title>
+</head>
+<body>
+    <input type="text" id="valor">
+    <button onclick="imparPar()">Clica</button>
+
+    <script>
+        function imparPar() {
+            var valor = parseInt(document.getElementById("valor").value);
+            var valorPar = valor /2;
+
+            if(valor % 2 == 0 ) {
+                alert("é par")
+            } else {
+                alert("é impar");
+            }
+        }
+    </script>
+</body>
+</html>
