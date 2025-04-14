@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+        var lines = input.split('\n');
+
+        var diasPessoa = parseInt(lines[0]);
+
+        var anosPessoa = Math.trunc(diasPessoa/365);
+        var anosResto = diasPessoa%365;
+        var mesesPessoa = Math.trunc(anosResto/30);
+        var mesesResto = diasPessoa%30;
+        var diasPessoaMostra = Math.trunc(mesesResto/2);
+
+        console.log(`${anosPessoa} ano(s)\n${mesesPessoa} mes(es)\n${diasPessoaMostra} dia(s)`);
+    </script>
+</body>
+</html>
