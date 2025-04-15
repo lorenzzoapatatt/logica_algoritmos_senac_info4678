@@ -10,3 +10,4 @@ var mesesResto = mesesPessoa%30;
 var anosDias = Math.trunc(mesesResto);
 
 console.log(`${anosPessoa} ano(s) \n ${anosMeses} mes(es) \n ${anosDias} dia(s)`);
+

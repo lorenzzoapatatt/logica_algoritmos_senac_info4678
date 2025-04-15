@@ -7,8 +7,7 @@
 </head>
 <body>
     <script>
-        var input = require('fs').readFileSync('/dev/stdin', 'utf8');
-        var lines = input.split('\n');
+        var lines = [2376]
 
         var diasPessoa = parseInt(lines[0]);
 
@@ -16,7 +15,7 @@
         var anosResto = diasPessoa%365;
         var mesesPessoa = Math.trunc(anosResto/30);
         var mesesResto = diasPessoa%30;
-        var diasPessoaMostra = Math.trunc(mesesResto/2);
+        var diasPessoaMostra = Math.trunc(mesesResto);
 
         console.log(`${anosPessoa} ano(s)\n${mesesPessoa} mes(es)\n${diasPessoaMostra} dia(s)`);
     </script>
