@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 28</title>
+</head>
+<body>
+    <input type="text" id="largura">
+    <input type="text" id="comprimento">
+
+    <button onclick="area()">Clica aqui</button>
+
+    <script>
+        function area() {
+            var largura = parseFloat(document.getElementById("largura").value);
+            var comprimento = parseFloat(document.getElementById("comprimento").value);
+
+            var calculoArea = largura * comprimento;
+
+            if (calculoArea < 101) {
+                alert(`TERRENO POPULAR`)
+            } else if (calculoArea < 501) {
+                alert(`TERRENO MASTER`)
+            }else {
+                alert(`TERRENO VIP`)
+            }
+        }
+    </script>
+</body>
+</html>

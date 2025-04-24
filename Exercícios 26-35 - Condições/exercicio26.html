@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 26</title>
+</head>
+<body>
+    <input type="text" id="valor1">
+    <input type="text" id="valor2">
+
+    <button onclick="comparacao()">Clica aqui</button>
+
+    <script>
+        function comparacao() {
+            var valor1 = parseInt(document.getElementById("valor1").value);
+            var valor2 = parseInt(document.getElementById("valor2").value);
+
+            if (valor1 > valor2) {
+                alert(`O primeiro valor é o maior `)
+            } else if(valor1 < valor2){
+                alert(`O segundo valor é o maior `)
+            }else {
+                alert(`Não existe valor maior, os dois são iguais`)
+            }
+        }
+    </script>
+</body>
+</html>

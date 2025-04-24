@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 29</title>
+</head>
+<body>
+    <input type="text" id="nome">
+    <input type="text" id="salario">
+    <input type="text" id="anosTrabalhados">
+
+    <button onclick="salarioReajustado()">Clica aqui</button>
+
+    <script>
+        function salarioReajustado() {
+            var salario = parseFloat(document.getElementById("salario").value);
+            var anosTrabalhados = parseFloat(document.getElementById("anosTrabalhados").value);
+
+            if (anosTrabalhados < 4) {
+                alert(salario * 1.03);
+            } else if (anosTrabalhados < 10) {
+                alert(salario * 1.125);
+            } else {
+                alert(salario * 1.20);
+            }
+        }
+    </script>
+</body>
+</html>

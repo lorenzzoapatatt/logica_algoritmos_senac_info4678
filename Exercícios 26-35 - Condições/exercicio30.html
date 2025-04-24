@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 30</title>
+</head>
+<body>
+    <input type="text" id="segmento1">
+    <input type="text" id="segmento2">
+    <input type="text" id="segmento3">
+    <button onclick="triangulo()">Clica aqui</button>
+
+    <script>
+        function triangulo() {
+            var segmento1 = parseFloat(document.getElementById("segmento1").value);
+            var segmento2 = parseFloat(document.getElementById("segmento2").value);
+            var segmento3 = parseFloat(document.getElementById("segmento3").value);
+
+            if (segmento1 + segmento2 >= segmento3 && segmento1 + segmento3 >= segmento2 && segmento2 + segmento3 >= segmento1) {
+                //é um triangulo
+                    if (segmento1 == segmento2 && segmento1 == segmento3) {
+                    alert(`EQUILÁTERO: todos os lados iguais`);
+                    } else if (segmento1 != segmento2 && segmento1 != segmento3) {
+                        alert(`ESCALENO: todos os lados diferentes`);
+                    } else {
+                        alert(`ISÓSCELES: dois lados iguais`)
+                    }
+            }else{
+                alert(`Não é triangulo`)
+            }
+
+            
+        }
+    </script>
+</body>
+</html>
+
+    /
+    //
+    ///
+A   ///   B
+    ////
+    /////
+      C
+A + B > C
+A + C > B
+B + C > A

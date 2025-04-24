@@ -7,17 +7,18 @@
 </head>
 <body>
     <script>
-        var lines = [2376]
+    
+var lines = [400];
 
-        var diasPessoa = parseInt(lines[0]);
+var diasPessoa = parseInt(lines[0]);
 
-        var anosPessoa = Math.trunc(diasPessoa/365);
-        var anosResto = diasPessoa%365;
-        var mesesPessoa = Math.trunc(anosResto/30);
-        var mesesResto = diasPessoa%30;
-        var diasPessoaMostra = Math.trunc(mesesResto);
+var anosPessoa = Math.trunc(diasPessoa/365);
+var anosResto = diasPessoa%365;
+var mesesPessoa = Math.trunc(anosResto/30);
+var mesesResto = mesesPessoa%30;
+var anosDias = Math.trunc(mesesResto);
 
-        console.log(`${anosPessoa} ano(s)\n${mesesPessoa} mes(es)\n${diasPessoaMostra} dia(s)`);
+console.log(`${anosPessoa} ano(s) \n ${anosMeses} mes(es) \n ${anosDias} dia(s)`);
     </script>
 </body>
 </html>
