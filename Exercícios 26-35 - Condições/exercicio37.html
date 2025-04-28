@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 37</title>
+</head>
+<body>
+    <input type="text" id="salarioAtual" placeholder="salario atual">
+    <input type="text" id="genero" placeholder="genero (bote F ou M)">
+    <input type="text" id="anosTrabalhados" placeholder="anos trabalhados">
+
+    <button onclick="">Clica aqui</button>
+
+    <script>
+        function novoSalario() {
+            var salarioAtual = parseFloat(document.getElementById("salarioAtual").value);
+            var genero = document.getElementById("genero").value;
+            var anosTrabalhados = parseInt(document.getElementById("anosTrabalhados").value);
+
+            var mulher = genero == "F";
+            var homem = genero == "M";
+
+            //mulher salario
+            if (anosTrabalhados < 15 && mulher) {
+                alert(salarioAtual * 1.05);
+            } else if (anosTrabalhados >= 15 && anosTrabalhados <= 20 && mulher) {
+                alert(salarioAtual * 1.12); 
+            } else if (anosTrabalhados > 20 && mulher) {
+                alert(salarioAtual * 1.23);
+            }
+
+            //homem salario
+            if (anosTrabalhados < 20 && homem) {
+                alert(salarioAtual * 1.03);
+            } else if (anosTrabalhados >= 20 && anosTrabalhados <= 30 && homem) {
+                alert(salarioAtual * 1.13); 
+            } else if (anosTrabalhados > 20 && homem) {
+                alert(salarioAtual * 1.25);
+            }
+        }
+    </script>
+</body>
+</html>

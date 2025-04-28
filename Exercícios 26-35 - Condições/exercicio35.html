@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 35</title>
+</head>
+<body>
+
+    <input type="text" id="tipoCarro" placeholder="tipo do carro">
+    <input type="text" id="diasAluguel" placeholder="dias de aluguel">
+    <input type="text" id="kmPercorridos" placeholder="km percorridos">
+
+    <button onclick="pagamentoCarro()">Clica aqui</button>
+
+    <script>
+        function pagamentoCarro() {
+            var tipoCarro = document.getElementById("tipoCarro").value;
+            var diasAluguel = parseInt(document.getElementById("diasAluguel").value);
+            var kmPercorridos = parseFloat(document.getElementById("kmPercorridos").value);
+
+            //tipo do carro pago por dia
+            if (tipoCarro == "Luxo") {
+                alert(diasAluguel * 150);
+            } else if(tipoCarro == "Popular") {
+                alert(diasAluguel * 90);
+            }
+
+
+            //km percorridos popular
+            if (kmPercorridos >= 100 && tipoCarro == "Popular") {
+                alert(kmPercorridos * 0.20);
+                if (kmPercorridos >= 200 && tipoCarro == "Luxo") {
+                    alert(kmPercorridos * 0.30);
+                } else if (kmPercorridos <= 200 && tipoCarro == "Luxo") {
+                    alert(kmPercorridos * 0.25)
+                }
+            } else {
+                alert(kmPercorridos * 0.10);
+            }
+        }
+    </script>
+</body>
+</html>

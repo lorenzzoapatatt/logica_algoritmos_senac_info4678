@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 31</title>
+</head>
+<body>
+    <input type="text" id="jogo1">
+    <input type="text" id="jogo2">
+
+    <button onclick="jogo()">Clica aqui</button>
+
+    <script>
+        function jogo() {
+            var jogo1 = document.getElementById("jogo1").value;
+            var jogo2 = document.getElementById("jogo2").value;
+
+            //pedra
+            if ( jogo1 == "pedra" && jogo2 == "tesoura") {
+                alert(`${jogo1} vence`)
+            } else if (jogo1 == "pedra" && jogo2 == "papel") {
+                alert(`${jogo2} vence`)
+            } else if (jogo1 == "pedra" && jogo2 == "pedra") {
+                alert(`empate`)
+            }
+
+            //papel
+            if ( jogo1 == "papel" && jogo2 == "tesoura") {
+                alert(`${jogo2} vence`)
+            } else if (jogo1 == "papel" && jogo2 == "papel") {
+                alert(`empate`)
+            } else if (jogo1 == "papel" && jogo2 == "pedra") {
+                alert(`${jogo1} vence`)
+            }
+
+            //tesoura
+            if ( jogo1 == "tesoura" && jogo2 == "tesoura") {
+                alert(`empate`)
+            } else if (jogo1 == "tesoura" && jogo2 == "papel") {
+                alert(`${jogo1} vence`)
+            } else if (jogo1 == "tesoura" && jogo2 == "pedra") {
+                alert(`${jogo2} vence`)
+            }
+        }
+    </script>
+</body>
+</html>

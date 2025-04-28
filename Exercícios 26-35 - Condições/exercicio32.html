@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 32</title>
+</head>
+<body>
+    <input type="text" id="valor" placeholder="tente acertar">
+
+    <button onclick="random()">Aperte aqui</button>
+
+    <script>
+        function random() {
+            var valor = parseInt(document.getElementById("valor").value);
+            var minimo = Math.ceil(1);
+            var maximo = Math.floor(6);
+            var randomizar = Math.floor(Math.random() * (maximo - minimo) + minimo);
+
+            if (randomizar == valor) {
+                alert(`voce acertou o numero: ${randomizar}`);
+            } else {
+                alert(`voce errou o numero: ${randomizar}`);
+            }
+        }
+    </script>
+</body>
+</html>

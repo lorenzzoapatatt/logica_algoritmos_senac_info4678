@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 36</title>
+</head>
+<body>
+    <input type="text" id="horas">
+
+    <button onclick="pontosGanhos()">Clica aqui</button>
+
+    <script>
+        function pontosGanhos() {
+            var horas = parseFloat(document.getElementById("horas").value);
+
+            var pontos = horas * 0.05;
+
+            if (horas <= 10) {
+                alert(pontos * 2);
+            } else if (horas > 10 && horas <= 20) {
+                alert(pontos * 5);
+            } else {
+                alert(pontos * 10);
+            }
+
+        }
+    </script>
+</body>
+</html>
