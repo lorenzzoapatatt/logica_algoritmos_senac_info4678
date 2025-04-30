@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 33</title>
+</head>
+<body>
+    <input type="text" id="valorCasa" placeholder="valorCasa">
+    <input type="text" id="salarioComprador" placeholder="salarioComprador">
+    <input type="text" id="parcela" placeholder="parcela">
+
+    <button onclick="emprestimo()">Clica aqui</button>
+
+    <script>
+        function emprestimo() {
+            var valorCasa = document.getElementById("valorCasa").value;
+            var salarioComprador = document.getElementById("salarioComprador").value;
+            var parcela = document.getElementById("parcela").value;
+            var prestacaoMensal = (valorCasa / parcela)
+
+            if (prestacaoMensal < salarioComprador * 0.30) {
+                alert(`voce pode comprar essa casa ${prestacaoMensal.toFixed(2)}`)
+            } else {
+                alert(`SAI Q VOCE N TEM DINHEIRO ${prestacaoMensal.toFixed(2)}`)
+            }
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- valor = float(input("Digite o valor da casa: "))
+salário = float(input("Digite o salário: "))
+anos = int(input("Quantos anos para pagar: "))
+meses = anos * 12
+prestacao = valor / meses
+if prestacao > salário * 0.3:
+    print("Infelizmente você não pode obter o empréstimo")
+else:
+    print(f"Valor da prestação: R$ {prestacao:7.2f} Empréstimo OK") -->
