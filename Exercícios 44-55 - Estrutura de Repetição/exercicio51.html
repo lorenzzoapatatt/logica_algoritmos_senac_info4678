@@ -9,15 +9,20 @@
     <script>
         window.onload = function() {
             var text = "";
-            var maior = 0;
-            var menor = 0;
+            var maior = null;
+            var menor = null;
             for (var i = 0; i < 4; i++) {
                 var preco = prompt("Digite aqui o preço dos produtos:");
                 text += " " + preco;
                 //testar o valor q esta digitando dentro do for
 
-                menor += preco;
+                if (menor == null || preco < menor) {
+                    menor = preco;
+                }
 
+                if (maior == null || preco > maior) {
+                    maior = preco;
+                }
 
                 }
                 console.log(text);
