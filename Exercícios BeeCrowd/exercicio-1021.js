@@ -18,15 +18,16 @@ var restoDeDois = restoDeCinco % 2;
 
 var umReal = Math.floor(restoDeDois / 1)
 var restoDeUm = restoDeDois % 1;
-var cinquentaCentavos = Math.floor(restoDeUm / 0.5);
+var cinquentaCentavos = Math.floor((restoDeUm / 0.5).toFixed(2));
 var restoDeCinquentaCentavos = restoDeUm % 0.5;
-var vinteCincoCentavos = Math.floor(restoDeCinquentaCentavos / 0.25);
+var vinteCincoCentavos = Math.floor((restoDeCinquentaCentavos / 0.25).toFixed(2));
 var restoDeVinteCincoCentavos = restoDeCinquentaCentavos % 0.25;
-var DezCentavos = Math.floor(restoDeVinteCincoCentavos / 0.10);
+var DezCentavos = Math.floor((restoDeVinteCincoCentavos / 0.10).toFixed(2));
 var restoDeDezCentavos = restoDeVinteCincoCentavos % 0.10;
-var cincoCentavos = Math.floor(restoDeDezCentavos / 0.05);
+var cincoCentavos = Math.floor((restoDeDezCentavos / 0.05).toFixed(2));
 var restoDeCincoCentavos = restoDeDezCentavos % 0.05;
-var umCentavo = Math.floor(restoDeCincoCentavos / 0.01);
+var umCentavo = Math.floor((restoDeCincoCentavos / 0.01).toFixed(2));
+
 
 console.log(`NOTAS:`);
 console.log(`${valorCem} nota(s) de R$ 100.00`);

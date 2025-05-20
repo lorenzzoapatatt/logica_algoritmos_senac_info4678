@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 55</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var minimo = Math.ceil(1);
+            var maximo = Math.floor(10);
+            for (var i = 0;i <= 4; i++) {
+                var valor = prompt("digite sua tentativa")
+                var randomizar = Math.floor(Math.random() * (maximo - minimo) + minimo);
+                text += " " + randomizar
+
+                if (valor == randomizar) {
+                    console.log("voce acertou!");
+                } else {
+                    console.log("voce errou SEU MERDA");
+                }
+            }
+            console.log(text);
+        }
+    </script>
+</body>
+</html>

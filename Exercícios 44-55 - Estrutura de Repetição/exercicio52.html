@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 52</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var somaIdades = 0;
+            var mais18 = 0;
+            var menos5 = 0;
+            var maiorIdade = 0;
+            for (var i = 0; i < 10; i++) {
+            var idade = parseInt(prompt("Digite a idade"))
+            text += " " + idade;
+            somaIdades += idade;
+
+                if (idade > 18) {
+                    mais18++;
+                }
+
+                if (idade < 5) {
+                    menos5++;
+                }
+
+            }
+            var idadeMedia = somaIdades/10;
+
+            console.log(text)
+            console.log(`media: ${idadeMedia}`)
+            console.log(mais18);
+            console.log(menos5);
+            console.log(idade);
+        }
+    </script>
+</body>
+</html>

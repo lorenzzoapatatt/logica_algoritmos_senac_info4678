@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 54</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var somaAltura = 0;
+            var mais90Kg = 0;
+            var peso50Altura160 = 0;
+            var gordalha = 0;
+            for (var i = 0; i < 7; i++) {
+                var peso = parseFloat(prompt("Bote o peso:"))
+                var altura = parseFloat(prompt("Bote a altura:"))
+                text += " " + peso;
+                somaAltura += altura;
+                somaPeso += peso;
+
+                if (peso > 90) {
+                    mais90Kg++;
+                }
+
+                if (peso < 50 && altura < 160) {
+                    peso50Altura160++;
+                }
+
+                if (peso > 100 && altura > 190 ) {
+                    gordalha++;
+                }
+
+            }
+
+            var mediaAltura = somaAltura/7;
+
+            console.log(text);
+            console.log(`media das alturas: ${mediaAltura}`);
+            console.log(`maior que 90Kg ${mais90Kg}`);
+            console.log(`pesa mais que 50 e altura 1,60 ${peso50Altura160}`);
+            console.log(`pesa mais de 100 e altura 1,90 ${gordalha}`);
+        }
+    </script>
+</body>
+</html>

@@ -7,18 +7,45 @@
 </head>
 <body>
     <script>
-    
-var lines = [400];
 
-var diasPessoa = parseInt(lines[0]);
+var lines = ["0.0 9.9 10.0 0.0 5.1"];
 
-var anosPessoa = Math.trunc(diasPessoa/365);
-var anosResto = diasPessoa%365;
-var mesesPessoa = Math.trunc(anosResto/30);
-var mesesResto = mesesPessoa%30;
-var anosDias = Math.trunc(mesesResto);
+var linha1 = lines[0].split(" ");
 
-console.log(`${anosPessoa} ano(s) \n ${anosMeses} mes(es) \n ${anosDias} dia(s)`);
+var A = parseFloat(linha1[0]);
+var B = parseFloat(linha1[1]);
+var C = parseFloat(linha1[2]);
+var D = parseFloat(linha1[3]);
+var E = parseFloat(linha1[4]);
+
+var media = (A*2 + B*3 + C*4 + D*1)/10
+var mediaRecalculada = (media + E)/2;
+
+if ( media >= 7 ) {
+    console.log(`Media: ${(media).toFixed(1)}`);
+    console.log("Aluno aprovado.");
+} else if ( media >= 5 && media <= 6.9 ) {
+    console.log(`Media: ${(media).toFixed(1)}`);
+    console.log("Aluno em exame.");
+    console.log(`Nota do exame: ${(E).toFixed(1)}`)
+} else {
+    console.log(`Media: ${(media).toFixed(1)}`);
+    console.log("Aluno reprovado.");
+}
+
+if ( media >= 5 && media <= 6.9 ) {
+    if ( mediaRecalculada >= 7 ) {
+        console.log("Aluno aprovado.");
+        console.log(`Media final: ${(mediaRecalculada).toFixed(1)}`);
+    } else if ( mediaRecalculada >= 5 && mediaRecalculada <= 6.9 ) {
+        console.log("Aluno em exame.");
+        console.log(`Media final: ${(mediaRecalculada).toFixed(1)}`)
+    } else {
+        console.log("Aluno reprovado.");
+        console.log(`Media final: ${(mediaRecalculada).toFixed(1)}`);
+    }
+}
+
     </script>
 </body>
 </html>

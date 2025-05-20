@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 51</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var maior = 0;
+            var menor = 0;
+            for (var i = 0; i < 4; i++) {
+                var preco = prompt("Digite aqui o preço dos produtos:");
+                text += " " + preco;
+                //testar o valor q esta digitando dentro do for
+
+                menor += preco;
+
+
+                }
+                console.log(text);
+                console.log(`maior preço digitado: ${maior}`);
+                console.log(`menor preço digitado: ${menor}`);
+            }
+    </script>
+</body>
+</html>

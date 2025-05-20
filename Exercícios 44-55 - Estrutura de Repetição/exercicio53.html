@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 53</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var somaIdades = 0;
+            var homemCadastrado = 0;
+            var mulherCadastrada = 0;
+            var somaIdadeHomens = 0;
+            var somaIdadeMulheres = 0;
+            for (var i = 0; i < 5; i++) {
+            var idade = parseInt(prompt("Digite a idade"));
+            var sexo = prompt("digite o sexo (M ou F)");
+            text += " " + idade;
+            somaIdades += idade;
+
+            if (sexo == "M") {
+                homemCadastrado++;
+                somaIdadeHomens += idade;
+            } else if (sexo == "F") {
+                mulherCadastrada++;
+                somaIdadeMulheres += idade;
+            }
+
+            }
+
+            var idadeMedia = somaIdades/5;
+            var idadeMediaHomens = somaIdadeHomens/5;
+            var idadeMediaMulheres = somaIdadeMulheres/5;
+
+            console.log(text);
+            console.log(`homem cadastrado: ${homemCadastrado}`);
+            console.log(`mulher cadastrada: ${mulherCadastrada}`);
+            console.log(`media: ${idadeMedia}`);
+            console.log(`media de homens: ${idadeMediaHomens}`);
+            console.log(`media mulher: ${idadeMediaMulheres}`)
+        }
+    </script>
+</body>
+</html>

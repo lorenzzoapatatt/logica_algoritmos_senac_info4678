@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 44</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+            var text = "";
+            var textValor = prompt("Digite o primeiro Valor: ");
+            var textIncremento = prompt("Digite o incremento: ");
+            var textContagem = prompt("Contagem: ");
+            var textValorNumber = Number(textValor);
+            var textIncrementoNumber = Number(textIncremento);
+            var textContagemNumber = Number(textContagem);
+
+            for (var i = textValorNumber; i <= textIncrementoNumber; i+=textContagemNumber) {
+                text += " " + i;
+            }
+            console.log(text + " Acabou!");
+        }
+    </script>
+</body>
+</html>
