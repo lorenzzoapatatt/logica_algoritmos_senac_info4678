@@ -8,20 +8,14 @@
 <body>
     <script>
         window.onload = function() {
-            var text = "";
-            var somatorio = 0;
-            for (var i = 0;i < 3; i++) {
-                escrevendo = prompt("escreva aqui:")
-                text += " " + escrevendo;
-                somatorio += Number(escrevendo);
-
-            }
-            console.log(text);
-            if (somatorio <= 1111) {
-                console.log(somatorio);
-                } else {
-                    console.log("PARA SEU MERDAAA")
+            var soma = 0;
+            for (var i = 0; i < 1; i++) {
+                var valorDigitado = Number("Digite um valor:")
+                if (valorDigitado != 1111) {
+                    soma += valorDigitado;
+                    i--;
                 }
+            }
         }
     </script>
 </body>
