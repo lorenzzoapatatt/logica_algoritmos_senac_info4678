@@ -8,14 +8,28 @@
 <body>
     <script>
         window.onload = function() {
+
+
             var soma = 0;
-            for (var i = 0; i < 1; i++) {
-                var valorDigitado = Number("Digite um valor:")
+            var i = 0;
+            while(i == 0) {
+                var valorDigitado = Number(prompt("Digite um valor:"))
                 if (valorDigitado != 1111) {
                     soma += valorDigitado;
-                    i--;
+                } else {
+                    i = 1;
                 }
             }
+
+
+            // var soma = 0;
+            // for (var i = 0; i < 1; i++) {
+            //     var valorDigitado = Number("Digite um valor:")
+            //     if (valorDigitado != 1111) {
+            //         soma += valorDigitado;
+            //         i--;
+            //     }
+            // }
         }
     </script>
 </body>

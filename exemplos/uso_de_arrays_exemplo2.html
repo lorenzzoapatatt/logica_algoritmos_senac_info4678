@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo array 2</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+        // pensar o array como um gaveteiro, varias comodas de gaveteiro;
+        // cada gaveta vai ter uma numeração a partir de 0 (gaveta 1: 0 gaveta 2: 1 gaveta 3: 2)
+
+        
+        var arrayDeNomes = ["Joao", "Nairo", "Pedro"];
+        // para n precisar fazer isso pq n tem necessidade de escrever varias var
+        // var Joao = "Joao";
+        // var Nairo = "Nairo";
+        // var Pedro = "Pedro";
+
+
+        for (var i = 0; i < arrayDeNomes.length; i++) {
+        //length serve para pegar todas as quantidades de valores dentro do array (no caso seria 3 o length)
+        arrayDeNomes[i] = "Nome Igual " + i;
+        }
+        console.log(arrayDeNomes);
+
+        
+        }
+    </script>
+</body>
+</html>
+
