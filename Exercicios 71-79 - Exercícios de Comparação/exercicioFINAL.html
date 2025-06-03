@@ -12,14 +12,25 @@
             var menor = null;
             for (var i = 0; i <= 15; i++) {
             var randomizar = Math.floor(Math.random() * 16);
-            array[i] = randomizar;
+            array.push(randomizar);
             }
-            for (var i = 0; i <= 15; i++) {
-                if (menor == null || randomizar < menor) {
-                    menor = randomizar;
+
+            console.log(array);
+
+            for (var pos = 1; pos < array.length; pos++) {
+                if (array[pos] < array[pos-1]) {
+                    for (var posi = pos; posi > 0; posi--) {
+                        if (array[posi] < array[posi-1]) {
+                            var aux = array[posi];
+                            array[posi] = array[posi-1];
+                            array[posi-1] = aux;
+                        } else {
+                            break;
+                        }
+                    }
                 }
             }
-            
+
             console.log(array);
         }
     </script>
